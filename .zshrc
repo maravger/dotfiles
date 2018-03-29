@@ -92,8 +92,18 @@ export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/Users/avgr_m/flutter/bin:$PATH"
 [ -z "$PS1" ] && return
 function cd {
     builtin cd "$@" && ls -F
     }
 precmd() { print "" }
+
+# Aliases for commands in the GENI omniTools-2.10 package
+alias omni='/Applications/omniTools-2.10/omni.app/Contents/MacOS/omni'
+alias stitcher='/Applications/omniTools-2.10/stitcher.app/Contents/MacOS/stitcher'
+alias omni-configure='/Applications/omniTools-2.10/omni-configure.app/Contents/MacOS/omni-configure'
+alias readyToLogin='/Applications/omniTools-2.10/readyToLogin.app/Contents/MacOS/readyToLogin'
+alias addMemberToSliceAndSlivers='/Applications/omniTools-2.10/addMemberToSliceAndSlivers.app/Contents/MacOS/addMemberToSliceAndSlivers'
+alias clear-passphrases='/Applications/omniTools-2.10/clear-passphrases.app/Contents/MacOS/clear-passphrases'
+alias remote-execute='/Applications/omniTools-2.10/remote-execute.app/Contents/MacOS/remote-execute'
